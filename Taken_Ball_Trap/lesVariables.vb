@@ -34,7 +34,7 @@
     Public cadencer3 As Integer = 1
     Public cadencer4 As Integer = 1
     Public nvlVal As Integer
-    Public nouvelValeur As Integer
+    Public mouvementDeLaLimite1 = "droite"
 
     Public unPoint As Point
     Public enlever As Integer = 89
@@ -48,5 +48,6 @@
     Public positionDuPanneauDesItems As Point = Form1.PanneauDesItems.Location
     Public onArreteLaMonteeOuDescenteDuPanneau As Boolean = False
     Public activer As Boolean = False
+    Public deplacerLePanzerJoyaDroite = True, deplacerLePanzerJoyEnBas = True
     Public directionDuPanneau = "monte"
 End Module

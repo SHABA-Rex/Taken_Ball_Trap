@@ -294,7 +294,7 @@
             positionLimite2Curseur.X += 90
             positionLimite3Curseur.X += 90
             nvlVal = positionLimite1Curseur.X '+ 11
-            If (nvlVal = Form1.case6.Location.X) Or (nvlVal = Form1.case10.Location.X) Then
+            If (nvlVal = Form1.case2.Location.X) Or (nvlVal = Form1.case5.Location.X) Then
                 Form1.Label46.Text = "On a toucher le point"
             End If
             'cadencer = 1 51 46
@@ -322,7 +322,7 @@
             positionLimite2Curseur.X -= 90
             positionLimite3Curseur.X -= 90
             nvlVal = positionLimite1Curseur.X
-            If (nvlVal = Form1.case6.Location.X) Or (nvlVal = Form1.case10.Location.X) Then
+            If (nvlVal = Form1.case2.Location.X) Or (nvlVal = Form1.case5.Location.X) Then
                 Form1.Label46.Text = "On a toucher le point"
             End If
             'cadencer = 1 51 46
@@ -357,7 +357,7 @@
             positionLimite2Curseur.Y += 90
             positionLimite3Curseur.Y += 90
             nvlVal = positionLimite1Curseur.Y '+ 11
-            If (nvlVal = Form1.caseX.Location.Y) Then 'Or (nvlVal = Form1.Label75.Location.Y) Then
+            If (nvlVal = Form1.case19.Location.Y) Then 'Or (nvlVal = Form1.Label75.Location.Y) Then
                 Form1.Label46.Text = "On a toucher le point"
             End If
             'cadencer = 1 51 46
@@ -385,7 +385,7 @@
             positionLimite2Curseur.Y -= 90
             positionLimite3Curseur.Y -= 90
             nvlVal = positionLimite1Curseur.Y '+ 11
-            If (nvlVal = Form1.case6.Location.Y) Then 'Or (nvlVal = Form1.Label75.Location.Y) Then
+            If (nvlVal = Form1.case4.Location.Y) Then 'Or (nvlVal = Form1.Label75.Location.Y) Then
                 Form1.Label46.Text = "On a toucher le point"
             End If
             'cadencer = 1 51 46
@@ -577,9 +577,9 @@
 
     Friend Sub verifierSiLaBalleToucheSaCibleSurLeHaut()
 
-        Form1.Label47.Text = "ordonnee : " & Form1.case6.Location.Y
+        Form1.Label47.Text = "ordonnee : " & Form1.case4.Location.Y
 
-        If nvlVal = Form1.case6.Location.Y And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
+        If nvlVal = Form1.case4.Location.Y And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
             'If (etat3 = 2) Then
             Form1.Label47.Text = "On a toucher la cible."
             positionLimite1Curseur = Form1.baliseLimite1.Location
@@ -608,7 +608,7 @@
     End Sub
     Friend Sub verifierSiLaBalleToucheSaCibleSurLeBas()
 
-        If nvlVal = Form1.caseX.Location.Y And (positionDeLaBallePanzerJoy.X > positionLimite1Curseur.X) And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite2Curseur.X) And (positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
+        If nvlVal = Form1.case19.Location.Y And (positionDeLaBallePanzerJoy.X > positionLimite1Curseur.X) And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite2Curseur.X) And (positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
             'If (etat3 = 2) Then
             Form1.Label47.Text = "On a toucher la cible."
             positionLimite1Curseur = Form1.baliseLimite1.Location
@@ -701,4 +701,23 @@
         End If
 
     End Sub
+
+
+    'Friend Sub limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
+    '    Dim pos As Point
+    '    If (mouvementDeLaLimite1 = "droite") Then
+    '        pos = positionLimite1Curseur
+    '        pos.X += 90
+    '        If (pos.Equals(Form1.case2.Location)) Then
+    '            deplacerLePanzerJoyaDroite = False
+    '        End If
+    '    ElseIf (mouvementDeLaLimite1 = "bas")
+    '        pos = positionLimite1Curseur
+    '        pos.Y += 90
+    '        If (pos.Equals(Form1.case2.Location)) Then
+    '            deplacerLePanzerJoyaDroite = False
+    '        End If
+    '    End If
+
+    'End Sub
 End Module
