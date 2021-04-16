@@ -16,6 +16,7 @@
     Public positionBalise3Limite3Curseur As Point = Form1.baliseLimit3.Location
     Public positionBalise4Limite4Curseur As Point = Form1.baliseLimite4.Location
     Public positionBaliseBalle As Point = Form1.baliseBallePanzerJoy.Location
+    Public tableauDesCasesDeLaCarte() As Point = {Form1.case46.Location, Form1.case33.Location, Form1.case34.Location, Form1.case35.Location, Form1.case36.Location, Form1.case37.Location}
 
     Public positionDuPanzerJoy As Point = Form1.panzerJoy.Location
     Public positionDeLaBallePanzerJoy As Point = Form1.ballePanzerJoy.Location
@@ -29,11 +30,13 @@
     Public positionLim2 = Form1.lim2.Location
     Public positionLim3 = Form1.lim3.Location
     Public positionLim4 = Form1.lim4.Location
+    Public compteur As Integer = 0
+
     Public cadencer As Integer = 1
     Public cadencer2 As Integer = 1
     Public cadencer3 As Integer = 1
     Public cadencer4 As Integer = 1
-    Public nvlVal As Integer
+    Public nvlVal, numeroDeLaCaseAtteinte As Integer
     Public mouvementDeLaLimite1 = "droite"
 
     Public unPoint, pos As Point
@@ -48,6 +51,7 @@
     Public positionDuPanneauDesItems As Point = Form1.PanneauDesItems.Location
     Public onArreteLaMonteeOuDescenteDuPanneau As Boolean = False
     Public activer As Boolean = False
+    Public leCurseuraAtteintSaCible As Boolean = False
     Public deplacerLePanzerJoyaDroite = True, deplacerLePanzerJoyEnBas = True, deplacerLePanzerJoyAGauche = True, deplacerLePanzerJoyEnHaut = True
     Public directionDuPanneau = "monte"
 End Module

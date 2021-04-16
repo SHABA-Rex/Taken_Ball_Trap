@@ -578,9 +578,10 @@
     Friend Sub verifierSiLaBalleToucheSaCibleSurLeHaut()
 
         Form1.Label47.Text = "ordonnee : " & Form1.case4.Location.Y
-
-        If nvlVal = Form1.case4.Location.Y And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
+        'nvlVal = Form1.case4.Location.Y 
+        If leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur.Y) And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
             'If (etat3 = 2) Then
+            leCurseuraAtteintSaCible = False
             Form1.Label47.Text = "On a toucher la cible."
             positionLimite1Curseur = Form1.baliseLimite1.Location
             positionLimite2Curseur = Form1.baliseLimite2.Location
@@ -741,8 +742,21 @@
 
     End Sub
 
-    Public Function leCurseurAtilAtteintUneCaseEntirantVersLeHaut(copiePositionDeLaLimite1 As Point)
+    Public Function leCurseurAtilAtteintUneCaseEntirantVersLeHaut(ByRef copiePositionDeLaLimite1 As Integer)
         'ICI on va verifier l'egalite des valeurs de la limite1  avec la position des cases.
-        Return True
+        'Et on va s'arreter lorsque le curseur aura toucher l'une des cases.
+        'Ici à chaque deplacement du curseur , cette verifiaction sera faite sur toutes les cases par rapport à copiePositionDeLaLimite1, à chaque deplacement du curseur.
+
+        For compteur = 0 To tableauDesCasesDeLaCarte.Length - 1
+            If (copiePositionDeLaLimite1 = tableauDesCasesDeLaCarte(compteur).Y) Then
+                leCurseuraAtteintSaCible = True 'On s'est arreter sur une case.
+
+            Else
+                leCurseuraAtteintSaCible = False
+            End If
+        Next
+
+
+        Return leCurseuraAtteintSaCible
     End Function
 End Module

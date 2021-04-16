@@ -1,4 +1,5 @@
 ﻿Public Class Form1
+
     Private Sub Form1_KeyDown(sender As Object, evenement As KeyEventArgs) Handles Me.KeyDown
 
         If (evenement.KeyCode = Keys.Right) Then
@@ -133,9 +134,9 @@
 
         tirerLaBalleVersLeHaut()
 
-        Dim caseAatteindre As Point = case4.Location
-
-        If (activerLeCurseurHaut) And (positionLimite1Curseur.Y <> caseAatteindre.Y) Then
+        Dim caseAatteindre As Point = case34.Location
+        'positionLimite1Curseur.Y <> caseAatteindre.Y
+        If (activerLeCurseurHaut) And Not (leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur.Y)) Then
             deplacerLeCurseurVersLeHaut()
         Else
             activerLeCurseurHaut = False
