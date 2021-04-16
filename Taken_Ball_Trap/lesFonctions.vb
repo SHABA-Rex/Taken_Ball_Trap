@@ -703,21 +703,21 @@
     End Sub
 
 
-    'Friend Sub limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
-    '    Dim pos As Point
-    '    If (mouvementDeLaLimite1 = "droite") Then
-    '        pos = positionLimite1Curseur
-    '        pos.X += 90
-    '        If (pos.Equals(Form1.case2.Location)) Then
-    '            deplacerLePanzerJoyaDroite = False
-    '        End If
-    '    ElseIf (mouvementDeLaLimite1 = "bas")
-    '        pos = positionLimite1Curseur
-    '        pos.Y += 90
-    '        If (pos.Equals(Form1.case2.Location)) Then
-    '            deplacerLePanzerJoyaDroite = False
-    '        End If
-    '    End If
+    Friend Sub limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
+        Dim pos As Point
+        If (mouvementDeLaLimite1 = "droite") Then
+            pos = positionLimite1Curseur
+            pos.X += 90
+            If (pos.Equals(Form1.case2.Location)) Then
+                deplacerLePanzerJoyaDroite = False
+            End If
+        ElseIf (mouvementDeLaLimite1 = "bas")
+            pos = positionLimite1Curseur
+            pos.Y += 90
+            If (pos.Equals(Form1.case2.Location)) Then
+                deplacerLePanzerJoyaDroite = False
+            End If
+        End If
 
-    'End Sub
+    End Sub
 End Module
