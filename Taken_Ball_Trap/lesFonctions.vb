@@ -722,7 +722,7 @@
                 deplacerLePanzerJoyEnBas = True
             End If
         ElseIf (mouvementDeLaLimite1 = "gauche")
-            pos = positionLimite1Curseur
+            pos = positionBalise1Limite1Curseur
             pos.X -= 90
             If (pos.Equals(Form1.case46.Location)) Then
                 deplacerLePanzerJoyAGauche = False
@@ -730,7 +730,7 @@
                 deplacerLePanzerJoyAGauche = True
             End If
         ElseIf (mouvementDeLaLimite1 = "haut")
-            pos = positionLimite1Curseur
+            pos = positionBalise1Limite1Curseur
             pos.Y -= 90
             If (pos.Equals(Form1.case32.Location)) Then
                 deplacerLePanzerJoyEnHaut = False
