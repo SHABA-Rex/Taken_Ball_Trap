@@ -16,7 +16,7 @@
     Public positionBalise3Limite3Curseur As Point = Form1.baliseLimit3.Location
     Public positionBalise4Limite4Curseur As Point = Form1.baliseLimite4.Location
     Public positionBaliseBalle As Point = Form1.baliseBallePanzerJoy.Location
-    Public tableauDesCasesDeLaCarte() As Point = {Form1.case46.Location, Form1.case33.Location, Form1.case34.Location, Form1.case35.Location, Form1.case36.Location, Form1.case37.Location}
+    Public tableauDesCasesDeLaCarte() As Label = {Form1.case32, Form1.case33, Form1.case34, Form1.case35, Form1.case36, Form1.case37, Form1.case38}
 
     Public positionDuPanzerJoy As Point = Form1.panzerJoy.Location
     Public positionDeLaBallePanzerJoy As Point = Form1.ballePanzerJoy.Location

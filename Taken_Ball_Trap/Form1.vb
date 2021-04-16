@@ -136,7 +136,7 @@
 
         Dim caseAatteindre As Point = case34.Location
         'positionLimite1Curseur.Y <> caseAatteindre.Y
-        If (activerLeCurseurHaut) And Not (leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur.Y)) Then
+        If (activerLeCurseurHaut) And Not (leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur)) Then
             deplacerLeCurseurVersLeHaut()
         Else
             activerLeCurseurHaut = False

@@ -131,8 +131,6 @@ Partial Class Form1
         Me.case23 = New System.Windows.Forms.Label()
         Me.case19 = New System.Windows.Forms.Label()
         Me.case21 = New System.Windows.Forms.Label()
-        Me.Label161 = New System.Windows.Forms.Label()
-        Me.Label162 = New System.Windows.Forms.Label()
         Me.Label163 = New System.Windows.Forms.Label()
         Me.Label164 = New System.Windows.Forms.Label()
         Me.Label165 = New System.Windows.Forms.Label()
@@ -188,6 +186,7 @@ Partial Class Form1
         Me.panzerJoy = New System.Windows.Forms.Label()
         Me.case1 = New System.Windows.Forms.Label()
         Me.Label15 = New System.Windows.Forms.Label()
+        Me.Label23 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.PanneauDesItems.SuspendLayout()
         Me.SuspendLayout()
@@ -1415,26 +1414,6 @@ Partial Class Form1
         Me.case21.Text = "case21"
         Me.case21.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label161
-        '
-        Me.Label161.BackColor = System.Drawing.Color.Yellow
-        Me.Label161.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label161.Location = New System.Drawing.Point(672, 361)
-        Me.Label161.Name = "Label161"
-        Me.Label161.Size = New System.Drawing.Size(10, 10)
-        Me.Label161.TabIndex = 194
-        Me.Label161.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
-        'Label162
-        '
-        Me.Label162.BackColor = System.Drawing.Color.Yellow
-        Me.Label162.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label162.Location = New System.Drawing.Point(680, 369)
-        Me.Label162.Name = "Label162"
-        Me.Label162.Size = New System.Drawing.Size(10, 10)
-        Me.Label162.TabIndex = 195
-        Me.Label162.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
-        '
         'Label163
         '
         Me.Label163.BackColor = System.Drawing.Color.Yellow
@@ -1514,7 +1493,7 @@ Partial Class Form1
         '
         'TimerDeplacementVersLeHautDeLaBalle
         '
-        Me.TimerDeplacementVersLeHautDeLaBalle.Interval = 1
+        Me.TimerDeplacementVersLeHautDeLaBalle.Interval = 1000
         '
         'Label49
         '
@@ -1971,12 +1950,24 @@ Partial Class Form1
         Me.Label15.TabIndex = 251
         Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label23
+        '
+        Me.Label23.BackColor = System.Drawing.Color.Lime
+        Me.Label23.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label23.Location = New System.Drawing.Point(-12, 630)
+        Me.Label23.Name = "Label23"
+        Me.Label23.Size = New System.Drawing.Size(376, 89)
+        Me.Label23.TabIndex = 252
+        Me.Label23.Text = "Label23"
+        Me.Label23.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1354, 733)
+        Me.Controls.Add(Me.Label23)
         Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.baliseBallePanzerJoy)
         Me.Controls.Add(Me.baliseLimit3)
@@ -2027,8 +2018,6 @@ Partial Class Form1
         Me.Controls.Add(Me.Label165)
         Me.Controls.Add(Me.Label164)
         Me.Controls.Add(Me.Label163)
-        Me.Controls.Add(Me.Label162)
-        Me.Controls.Add(Me.Label161)
         Me.Controls.Add(Me.Label150)
         Me.Controls.Add(Me.case32)
         Me.Controls.Add(Me.case25)
@@ -2197,8 +2186,6 @@ Partial Class Form1
     Friend WithEvents case23 As Label
     Friend WithEvents case19 As Label
     Friend WithEvents case21 As Label
-    Friend WithEvents Label161 As Label
-    Friend WithEvents Label162 As Label
     Friend WithEvents Label163 As Label
     Friend WithEvents Label164 As Label
     Friend WithEvents Label165 As Label
@@ -2254,4 +2241,5 @@ Partial Class Form1
     Friend WithEvents panzerJoy As Label
     Friend WithEvents case1 As Label
     Friend WithEvents Label15 As Label
+    Friend WithEvents Label23 As Label
 End Class

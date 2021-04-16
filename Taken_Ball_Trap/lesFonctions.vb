@@ -65,7 +65,7 @@
     End Sub
     Friend Sub tirerLaBalleVersLeHaut()
         If (positionDeLaBallePanzerJoy.Y > 0) And continuerLeTirDeLaBalleVersLeHaut Then
-            positionDeLaBallePanzerJoy.Y -= 5
+            positionDeLaBallePanzerJoy.Y -= 90
             Form1.ballePanzerJoy.Location = positionDeLaBallePanzerJoy
             verifierSiLaBalleToucheSaCibleSurLeHaut()
         End If
@@ -579,7 +579,7 @@
 
         Form1.Label47.Text = "ordonnee : " & Form1.case4.Location.Y
         'nvlVal = Form1.case4.Location.Y 
-        If leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur.Y) And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
+        If leCurseurAtilAtteintUneCaseEntirantVersLeHaut(positionLimite1Curseur) And (positionDeLaBallePanzerJoy.X > positionLimite4Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) And (positionDeLaBallePanzerJoy.X < positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y) Then ' And (positionDeLaBallePanzerJoy.X > positionLimite3Curseur.X) And (positionDeLaBallePanzerJoy.X < positionLimite4Curseur.X)) Then 'And (positionDeLaBallePanzerJoy.Y > positionLimite1Curseur.Y And positionDeLaBallePanzerJoy.Y > positionLimite2Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite3Curseur.Y And positionDeLaBallePanzerJoy.Y < positionLimite4Curseur.Y) Then
             'If (etat3 = 2) Then
             leCurseuraAtteintSaCible = False
             Form1.Label47.Text = "On a toucher la cible."
@@ -742,21 +742,32 @@
 
     End Sub
 
-    Public Function leCurseurAtilAtteintUneCaseEntirantVersLeHaut(ByRef copiePositionDeLaLimite1 As Integer)
+    Public Function leCurseurAtilAtteintUneCaseEntirantVersLeHaut(ByRef copiePositionDeLaLimite1 As Point)
         'ICI on va verifier l'egalite des valeurs de la limite1  avec la position des cases.
         'Et on va s'arreter lorsque le curseur aura toucher l'une des cases.
         'Ici à chaque deplacement du curseur , cette verifiaction sera faite sur toutes les cases par rapport à copiePositionDeLaLimite1, à chaque deplacement du curseur.
 
         For compteur = 0 To tableauDesCasesDeLaCarte.Length - 1
-            If (copiePositionDeLaLimite1 = tableauDesCasesDeLaCarte(compteur).Y) Then
+            If (copiePositionDeLaLimite1.Y = tableauDesCasesDeLaCarte(compteur).Location.Y) Then
                 leCurseuraAtteintSaCible = True 'On s'est arreter sur une case.
-
+                faireDisparaitreUneCase(copiePositionDeLaLimite1)
+                'Form1.Label23.Text = "Nbr :" & compteur
             Else
                 leCurseuraAtteintSaCible = False
             End If
         Next
 
 
+
+
         Return leCurseuraAtteintSaCible
     End Function
+
+    Public Sub faireDisparaitreUneCase(ByVal copiePositionDeLaLimite1 As Point)
+        numeroDeLaCaseAtteinte = compteur
+        If (copiePositionDeLaLimite1.X = tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Location.X) And (copiePositionDeLaLimite1.Y = tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Location.Y) Then
+            tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Hide()
+        End If
+    End Sub
+
 End Module
