@@ -706,7 +706,7 @@
     Friend Sub limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
 
         If (mouvementDeLaLimite1 = "droite") Then
-            pos = positionLimite1Curseur
+            pos = positionBalise1Limite1Curseur
             pos.X += 90
             If (pos.Equals(Form1.case2.Location)) Then
                 deplacerLePanzerJoyaDroite = False
@@ -714,7 +714,7 @@
                 deplacerLePanzerJoyaDroite = True
             End If
         ElseIf (mouvementDeLaLimite1 = "bas")
-            pos = positionLimite1Curseur
+            pos = positionBalise1Limite1Curseur
             pos.Y += 90
             If (pos.Equals(Form1.case16.Location)) Then
                 deplacerLePanzerJoyEnBas = False
