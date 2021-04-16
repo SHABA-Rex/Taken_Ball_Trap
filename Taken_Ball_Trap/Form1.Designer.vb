@@ -1,9 +1,9 @@
-﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()> _
+﻿<Global.Microsoft.VisualBasic.CompilerServices.DesignerGenerated()>
 Partial Class Form1
     Inherits System.Windows.Forms.Form
 
     'Form overrides dispose to clean up the component list.
-    <System.Diagnostics.DebuggerNonUserCode()> _
+    <System.Diagnostics.DebuggerNonUserCode()>
     Protected Overrides Sub Dispose(ByVal disposing As Boolean)
         Try
             If disposing AndAlso components IsNot Nothing Then
@@ -20,7 +20,7 @@ Partial Class Form1
     'NOTE: The following procedure is required by the Windows Form Designer
     'It can be modified using the Windows Form Designer.  
     'Do not modify it using the code editor.
-    <System.Diagnostics.DebuggerStepThrough()> _
+    <System.Diagnostics.DebuggerStepThrough()>
     Private Sub InitializeComponent()
         Me.components = New System.ComponentModel.Container()
         Me.Label1 = New System.Windows.Forms.Label()
@@ -37,7 +37,7 @@ Partial Class Form1
         Me.Label12 = New System.Windows.Forms.Label()
         Me.Label13 = New System.Windows.Forms.Label()
         Me.Label14 = New System.Windows.Forms.Label()
-        Me.Label15 = New System.Windows.Forms.Label()
+        Me.case46 = New System.Windows.Forms.Label()
         Me.Label16 = New System.Windows.Forms.Label()
         Me.Label17 = New System.Windows.Forms.Label()
         Me.Label18 = New System.Windows.Forms.Label()
@@ -187,6 +187,7 @@ Partial Class Form1
         Me.lim1 = New System.Windows.Forms.Label()
         Me.panzerJoy = New System.Windows.Forms.Label()
         Me.case1 = New System.Windows.Forms.Label()
+        Me.Label15 = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.PanneauDesItems.SuspendLayout()
         Me.SuspendLayout()
@@ -345,16 +346,16 @@ Partial Class Form1
         Me.Label14.Text = "Label14"
         Me.Label14.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
-        'Label15
+        'case46
         '
-        Me.Label15.BackColor = System.Drawing.Color.Lime
-        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.Label15.Location = New System.Drawing.Point(5, 271)
-        Me.Label15.Name = "Label15"
-        Me.Label15.Size = New System.Drawing.Size(89, 89)
-        Me.Label15.TabIndex = 14
-        Me.Label15.Text = "Label15"
-        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.case46.BackColor = System.Drawing.Color.Lime
+        Me.case46.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.case46.Location = New System.Drawing.Point(5, 271)
+        Me.case46.Name = "case46"
+        Me.case46.Size = New System.Drawing.Size(89, 89)
+        Me.case46.TabIndex = 14
+        Me.case46.Text = "case46"
+        Me.case46.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Label16
         '
@@ -1802,7 +1803,7 @@ Partial Class Form1
         '
         Me.baliseBallePanzerJoy.BackColor = System.Drawing.Color.Yellow
         Me.baliseBallePanzerJoy.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.baliseBallePanzerJoy.Location = New System.Drawing.Point(42, 41)
+        Me.baliseBallePanzerJoy.Location = New System.Drawing.Point(132, 311)
         Me.baliseBallePanzerJoy.Name = "baliseBallePanzerJoy"
         Me.baliseBallePanzerJoy.Size = New System.Drawing.Size(10, 10)
         Me.baliseBallePanzerJoy.TabIndex = 250
@@ -1812,7 +1813,7 @@ Partial Class Form1
         '
         Me.baliseLimit3.BackColor = System.Drawing.Color.Red
         Me.baliseLimit3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.baliseLimit3.Location = New System.Drawing.Point(84, 80)
+        Me.baliseLimit3.Location = New System.Drawing.Point(174, 350)
         Me.baliseLimit3.Name = "baliseLimit3"
         Me.baliseLimit3.Size = New System.Drawing.Size(10, 10)
         Me.baliseLimit3.TabIndex = 249
@@ -1822,7 +1823,7 @@ Partial Class Form1
         '
         Me.baliseLimite4.BackColor = System.Drawing.Color.Red
         Me.baliseLimite4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.baliseLimite4.Location = New System.Drawing.Point(5, 80)
+        Me.baliseLimite4.Location = New System.Drawing.Point(95, 350)
         Me.baliseLimite4.Name = "baliseLimite4"
         Me.baliseLimite4.Size = New System.Drawing.Size(10, 10)
         Me.baliseLimite4.TabIndex = 248
@@ -1832,7 +1833,7 @@ Partial Class Form1
         '
         Me.baliseLimite2.BackColor = System.Drawing.Color.Red
         Me.baliseLimite2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.baliseLimite2.Location = New System.Drawing.Point(84, 1)
+        Me.baliseLimite2.Location = New System.Drawing.Point(174, 271)
         Me.baliseLimite2.Name = "baliseLimite2"
         Me.baliseLimite2.Size = New System.Drawing.Size(10, 10)
         Me.baliseLimite2.TabIndex = 247
@@ -1842,7 +1843,7 @@ Partial Class Form1
         '
         Me.baliseLimite1.BackColor = System.Drawing.Color.Red
         Me.baliseLimite1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.baliseLimite1.Location = New System.Drawing.Point(5, 1)
+        Me.baliseLimite1.Location = New System.Drawing.Point(95, 271)
         Me.baliseLimite1.Name = "baliseLimite1"
         Me.baliseLimite1.Size = New System.Drawing.Size(10, 10)
         Me.baliseLimite1.TabIndex = 246
@@ -1852,7 +1853,7 @@ Partial Class Form1
         '
         Me.ballePanzerJoy.BackColor = System.Drawing.Color.Yellow
         Me.ballePanzerJoy.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.ballePanzerJoy.Location = New System.Drawing.Point(42, 41)
+        Me.ballePanzerJoy.Location = New System.Drawing.Point(132, 311)
         Me.ballePanzerJoy.Name = "ballePanzerJoy"
         Me.ballePanzerJoy.Size = New System.Drawing.Size(10, 10)
         Me.ballePanzerJoy.TabIndex = 245
@@ -1862,7 +1863,7 @@ Partial Class Form1
         '
         Me.lim3Curseur.BackColor = System.Drawing.Color.Red
         Me.lim3Curseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim3Curseur.Location = New System.Drawing.Point(84, 80)
+        Me.lim3Curseur.Location = New System.Drawing.Point(174, 350)
         Me.lim3Curseur.Name = "lim3Curseur"
         Me.lim3Curseur.Size = New System.Drawing.Size(10, 10)
         Me.lim3Curseur.TabIndex = 244
@@ -1872,7 +1873,7 @@ Partial Class Form1
         '
         Me.lim4Curseur.BackColor = System.Drawing.Color.Red
         Me.lim4Curseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim4Curseur.Location = New System.Drawing.Point(5, 80)
+        Me.lim4Curseur.Location = New System.Drawing.Point(95, 350)
         Me.lim4Curseur.Name = "lim4Curseur"
         Me.lim4Curseur.Size = New System.Drawing.Size(10, 10)
         Me.lim4Curseur.TabIndex = 243
@@ -1882,7 +1883,7 @@ Partial Class Form1
         '
         Me.lim2Curseur.BackColor = System.Drawing.Color.Red
         Me.lim2Curseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim2Curseur.Location = New System.Drawing.Point(84, 1)
+        Me.lim2Curseur.Location = New System.Drawing.Point(174, 271)
         Me.lim2Curseur.Name = "lim2Curseur"
         Me.lim2Curseur.Size = New System.Drawing.Size(10, 10)
         Me.lim2Curseur.TabIndex = 242
@@ -1892,7 +1893,7 @@ Partial Class Form1
         '
         Me.lim1Curseur.BackColor = System.Drawing.Color.Red
         Me.lim1Curseur.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim1Curseur.Location = New System.Drawing.Point(5, 1)
+        Me.lim1Curseur.Location = New System.Drawing.Point(95, 271)
         Me.lim1Curseur.Name = "lim1Curseur"
         Me.lim1Curseur.Size = New System.Drawing.Size(10, 10)
         Me.lim1Curseur.TabIndex = 241
@@ -1902,7 +1903,7 @@ Partial Class Form1
         '
         Me.lim2.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lim2.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim2.Location = New System.Drawing.Point(64, 21)
+        Me.lim2.Location = New System.Drawing.Point(154, 291)
         Me.lim2.Name = "lim2"
         Me.lim2.Size = New System.Drawing.Size(10, 10)
         Me.lim2.TabIndex = 240
@@ -1912,7 +1913,7 @@ Partial Class Form1
         '
         Me.lim3.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lim3.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim3.Location = New System.Drawing.Point(64, 61)
+        Me.lim3.Location = New System.Drawing.Point(154, 331)
         Me.lim3.Name = "lim3"
         Me.lim3.Size = New System.Drawing.Size(10, 10)
         Me.lim3.TabIndex = 239
@@ -1922,7 +1923,7 @@ Partial Class Form1
         '
         Me.lim4.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lim4.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim4.Location = New System.Drawing.Point(24, 61)
+        Me.lim4.Location = New System.Drawing.Point(114, 331)
         Me.lim4.Name = "lim4"
         Me.lim4.Size = New System.Drawing.Size(10, 10)
         Me.lim4.TabIndex = 238
@@ -1932,7 +1933,7 @@ Partial Class Form1
         '
         Me.lim1.BackColor = System.Drawing.Color.FromArgb(CType(CType(128, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.lim1.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.lim1.Location = New System.Drawing.Point(24, 21)
+        Me.lim1.Location = New System.Drawing.Point(114, 291)
         Me.lim1.Name = "lim1"
         Me.lim1.Size = New System.Drawing.Size(10, 10)
         Me.lim1.TabIndex = 237
@@ -1942,7 +1943,7 @@ Partial Class Form1
         '
         Me.panzerJoy.BackColor = System.Drawing.Color.FromArgb(CType(CType(255, Byte), Integer), CType(CType(128, Byte), Integer), CType(CType(0, Byte), Integer))
         Me.panzerJoy.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.panzerJoy.Location = New System.Drawing.Point(24, 21)
+        Me.panzerJoy.Location = New System.Drawing.Point(114, 291)
         Me.panzerJoy.Name = "panzerJoy"
         Me.panzerJoy.Size = New System.Drawing.Size(50, 50)
         Me.panzerJoy.TabIndex = 236
@@ -1960,12 +1961,23 @@ Partial Class Form1
         Me.case1.Text = "case1"
         Me.case1.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
+        'Label15
+        '
+        Me.Label15.BackColor = System.Drawing.Color.Red
+        Me.Label15.Font = New System.Drawing.Font("Microsoft Sans Serif", 14.25!, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.Label15.Location = New System.Drawing.Point(95, 1)
+        Me.Label15.Name = "Label15"
+        Me.Label15.Size = New System.Drawing.Size(10, 10)
+        Me.Label15.TabIndex = 251
+        Me.Label15.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'Form1
         '
         Me.AutoScaleDimensions = New System.Drawing.SizeF(6.0!, 13.0!)
         Me.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font
         Me.BackColor = System.Drawing.Color.FromArgb(CType(CType(0, Byte), Integer), CType(CType(64, Byte), Integer), CType(CType(64, Byte), Integer))
         Me.ClientSize = New System.Drawing.Size(1354, 733)
+        Me.Controls.Add(Me.Label15)
         Me.Controls.Add(Me.baliseBallePanzerJoy)
         Me.Controls.Add(Me.baliseLimit3)
         Me.Controls.Add(Me.baliseLimite4)
@@ -2064,7 +2076,7 @@ Partial Class Form1
         Me.Controls.Add(Me.case31)
         Me.Controls.Add(Me.Label22)
         Me.Controls.Add(Me.GroupBox1)
-        Me.Controls.Add(Me.Label15)
+        Me.Controls.Add(Me.case46)
         Me.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle
         Me.MaximizeBox = False
         Me.MinimizeBox = False
@@ -2091,7 +2103,7 @@ Partial Class Form1
     Friend WithEvents Label12 As Label
     Friend WithEvents Label13 As Label
     Friend WithEvents Label14 As Label
-    Friend WithEvents Label15 As Label
+    Friend WithEvents case46 As Label
     Friend WithEvents Label16 As Label
     Friend WithEvents Label17 As Label
     Friend WithEvents Label18 As Label
@@ -2241,4 +2253,5 @@ Partial Class Form1
     Friend WithEvents lim1 As Label
     Friend WithEvents panzerJoy As Label
     Friend WithEvents case1 As Label
+    Friend WithEvents Label15 As Label
 End Class

@@ -36,7 +36,7 @@
     Public nvlVal As Integer
     Public mouvementDeLaLimite1 = "droite"
 
-    Public unPoint As Point
+    Public unPoint, pos As Point
     Public enlever As Integer = 89
     Public pasDeDeplacementDuPanzer As Integer = 90 '2 '10
     Public limiteDroite As Integer = Form1.Width - 89 '30
@@ -48,6 +48,6 @@
     Public positionDuPanneauDesItems As Point = Form1.PanneauDesItems.Location
     Public onArreteLaMonteeOuDescenteDuPanneau As Boolean = False
     Public activer As Boolean = False
-    Public deplacerLePanzerJoyaDroite = True, deplacerLePanzerJoyEnBas = True
+    Public deplacerLePanzerJoyaDroite = True, deplacerLePanzerJoyEnBas = True, deplacerLePanzerJoyAGauche = True, deplacerLePanzerJoyEnHaut = True
     Public directionDuPanneau = "monte"
 End Module

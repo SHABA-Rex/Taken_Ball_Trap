@@ -1,5 +1,16 @@
 ﻿Public Class Form1
     Private Sub Form1_KeyDown(sender As Object, evenement As KeyEventArgs) Handles Me.KeyDown
+
+        If (evenement.KeyCode = Keys.Right) Then
+            mouvementDeLaLimite1 = "droite"
+        ElseIf (evenement.KeyCode = Keys.Left)
+            mouvementDeLaLimite1 = "gauche"
+        ElseIf (evenement.KeyCode = Keys.Down)
+            mouvementDeLaLimite1 = "bas"
+        ElseIf (evenement.KeyCode = Keys.Up)
+            mouvementDeLaLimite1 = "haut"
+        End If
+
         limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
 
 
@@ -7,16 +18,18 @@
             If (deplacerLePanzerJoyaDroite) Then
                 deplacerPanzerJoyVersDroite()
             End If
-            mouvementDeLaLimite1 = "droite"
         ElseIf (evenement.KeyCode = Keys.Left)
-            deplacerPanzerJoyVersGauche()
+            If (deplacerLePanzerJoyAGauche) Then
+                deplacerPanzerJoyVersGauche()
+            End If
         ElseIf (evenement.KeyCode = Keys.Down)
             If (deplacerLePanzerJoyEnBas) Then
                 deplacerPanzerJoyVersBas()
             End If
-            mouvementDeLaLimite1 = "bas"
-            ElseIf (evenement.KeyCode = Keys.Up)
+        ElseIf (evenement.KeyCode = Keys.Up)
+            If (deplacerLePanzerJoyEnHaut) Then
                 deplacerPanzerJoyVersHaut()
+            End If
         End If
 
         If (evenement.KeyCode = Keys.NumPad3) Then
