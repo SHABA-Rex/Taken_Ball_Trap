@@ -386,7 +386,7 @@
             positionLimite3Curseur.Y -= 90
             nvlVal = positionLimite1Curseur.Y '+ 11
             If (nvlVal = Form1.case4.Location.Y) Then 'Or (nvlVal = Form1.Label75.Location.Y) Then
-                Form1.Label46.Text = "On a toucher le point"
+                Form1.Label46.Text = "Le curseur a atteint l'objectif."
             End If
             'cadencer = 1 51 46
         End If
@@ -740,4 +740,9 @@
         End If
 
     End Sub
+
+    Public Function leCurseurAtilAtteintUneCaseEntirantVersLeHaut(copiePositionDeLaLimite1 As Point)
+        'ICI on va verifier l'egalite des valeurs de la limite1  avec la position des cases.
+        Return True
+    End Function
 End Module

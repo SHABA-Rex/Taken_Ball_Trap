@@ -89,57 +89,57 @@
         monterOuDescendrePanneau.Start()
     End Sub
 
-    'Private Sub TimerDeplacementDroitBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementDroitBalle.Tick
+    Private Sub TimerDeplacementDroitBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementDroitBalle.Tick
 
-    '    Dim positionCase10 As Point = case5.Location
-    '    tirerLaBalleVersLaDroite()
+        Dim positionCase10 As Point = case5.Location
+        tirerLaBalleVersLaDroite()
 
 
-    '    If (activerLeCurseurDroit) And (positionLimite1Curseur.X <> positionCase10.X) Then
-    '        deplacerLeCurseurVersLaDroite()
-    '    Else
-    '        activerLeCurseurDroit = False
-    '    End If
+        If (activerLeCurseurDroit) And (positionLimite1Curseur.X <> positionCase10.X) Then
+            deplacerLeCurseurVersLaDroite()
+        Else
+            activerLeCurseurDroit = False
+        End If
 
-    'End Sub
+    End Sub
 
-    'Private Sub TimerDeplacementGaucheBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementGaucheBalle.Tick
+    Private Sub TimerDeplacementGaucheBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementGaucheBalle.Tick
 
-    '    Dim positionCase1 As Point = case16.Location
-    '    tirerLaBalleVersLaGauche()
+        Dim positionCase1 As Point = case16.Location
+        tirerLaBalleVersLaGauche()
 
-    '    If (activerLeCurseurGauche) And (positionLimite1Curseur.X <> positionCase1.X) Then
-    '        deplacerLeCurseurVersLaGauche()
-    '    Else
-    '        activerLeCurseurGauche = False
-    '    End If
-    'End Sub
+        If (activerLeCurseurGauche) And (positionLimite1Curseur.X <> positionCase1.X) Then
+            deplacerLeCurseurVersLaGauche()
+        Else
+            activerLeCurseurGauche = False
+        End If
+    End Sub
 
-    'Private Sub TimerDeplacementVersLeBasDeLaBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementVersLeBasDeLaBalle.Tick
+    Private Sub TimerDeplacementVersLeBasDeLaBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementVersLeBasDeLaBalle.Tick
 
-    '    tirerLaBalleVersLeBas()
+        tirerLaBalleVersLeBas()
 
-    '    Dim caseAatteindre As Point = case19.Location
+        Dim caseAatteindre As Point = case19.Location
 
-    '    If (activerLeCurseurBas) And (positionLimite1Curseur.Y <> caseAatteindre.Y) Then
-    '        deplacerLeCurseurVersLeBas()
-    '    Else
-    '        activerLeCurseurBas = False
-    '    End If
+        If (activerLeCurseurBas) And (positionLimite1Curseur.Y <> caseAatteindre.Y) Then
+            deplacerLeCurseurVersLeBas()
+        Else
+            activerLeCurseurBas = False
+        End If
 
-    'End Sub
+    End Sub
 
-    'Private Sub TimerDeplacementVersLeHautDeLaBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementVersLeHautDeLaBalle.Tick
+    Private Sub TimerDeplacementVersLeHautDeLaBalle_Tick(sender As Object, e As EventArgs) Handles TimerDeplacementVersLeHautDeLaBalle.Tick
 
-    '    tirerLaBalleVersLeHaut()
+        tirerLaBalleVersLeHaut()
 
-    '    Dim caseAatteindre As Point = cas.Location
+        Dim caseAatteindre As Point = case4.Location
 
-    '    If (activerLeCurseurHaut) And (positionLimite1Curseur.Y <> caseAatteindre.Y) Then
-    '        deplacerLeCurseurVersLeHaut()
-    '    Else
-    '        activerLeCurseurHaut = False
-    '    End If
-    'End Sub
+        If (activerLeCurseurHaut) And (positionLimite1Curseur.Y <> caseAatteindre.Y) Then
+            deplacerLeCurseurVersLeHaut()
+        Else
+            activerLeCurseurHaut = False
+        End If
+    End Sub
 End Class
 
