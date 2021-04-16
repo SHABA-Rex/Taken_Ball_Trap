@@ -34,6 +34,7 @@
     Public cadencer3 As Integer = 1
     Public cadencer4 As Integer = 1
     Public nvlVal As Integer
+    Public nouvelValeur As Integer
 
     Public unPoint As Point
     Public enlever As Integer = 89

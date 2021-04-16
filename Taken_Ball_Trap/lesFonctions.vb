@@ -1,4 +1,5 @@
 ﻿Module lesFonctions
+
     Friend Sub deplacerPanzerVersLaDroite()
 
         If (activerUneSeulFois2 = 0) Then
