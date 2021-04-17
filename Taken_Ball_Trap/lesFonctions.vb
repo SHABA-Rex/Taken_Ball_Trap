@@ -705,6 +705,7 @@
 
 
     Friend Sub limiterLesDeplacementsDuPanzerJoySurLespaceAutoriser()
+        onNeDepassePasCesCases = IIf(pos.Equals(Form1.case32.Location), True, False)
 
         If (mouvementDeLaLimite1 = "droite") Then
             pos = positionBalise1Limite1Curseur
@@ -717,7 +718,7 @@
         ElseIf (mouvementDeLaLimite1 = "bas")
             pos = positionBalise1Limite1Curseur
             pos.Y += 90
-            If (pos.Equals(Form1.case16.Location)) Then
+            If (lePanzerJoyToucheUneCase()) Then
                 deplacerLePanzerJoyEnBas = False
             Else
                 deplacerLePanzerJoyEnBas = True
@@ -725,7 +726,7 @@
         ElseIf (mouvementDeLaLimite1 = "gauche")
             pos = positionBalise1Limite1Curseur
             pos.X -= 90
-            If (pos.Equals(Form1.case46.Location)) Then
+            If (lePanzerJoyToucheUneCase()) Then
                 deplacerLePanzerJoyAGauche = False
             Else
                 deplacerLePanzerJoyAGauche = True
@@ -733,7 +734,7 @@
         ElseIf (mouvementDeLaLimite1 = "haut")
             pos = positionBalise1Limite1Curseur
             pos.Y -= 90
-            If (pos.Equals(Form1.case32.Location)) Then
+            If (lePanzerJoyToucheUneCase()) Then
                 deplacerLePanzerJoyEnHaut = False
             Else
                 deplacerLePanzerJoyEnHaut = True
@@ -751,15 +752,10 @@
             If (copiePositionDeLaLimite1.Y = tableauDesCasesDeLaCarte(compteur).Location.Y) Then
                 leCurseuraAtteintSaCible = True 'On s'est arreter sur une case.
                 faireDisparaitreUneCase(copiePositionDeLaLimite1)
-                'Form1.Label23.Text = "Nbr :" & compteur
             Else
                 leCurseuraAtteintSaCible = False
             End If
         Next
-
-
-
-
         Return leCurseuraAtteintSaCible
     End Function
 
@@ -767,7 +763,18 @@
         numeroDeLaCaseAtteinte = compteur
         If (copiePositionDeLaLimite1.X = tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Location.X) And (copiePositionDeLaLimite1.Y = tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Location.Y) Then
             tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Hide()
+            tableauDesCasesDeLaCarte(numeroDeLaCaseAtteinte).Location = pointQuelquonque
         End If
     End Sub
+    Public Function lePanzerJoyToucheUneCase() As Boolean
+        Dim valBool As Boolean
 
+        If (((pos.Equals(Form1.case1.Location) Or pos.Equals(Form1.case2.Location) Or pos.Equals(Form1.case3.Location) Or pos.Equals(Form1.case4.Location)) Or pos.Equals(Form1.case5.Location) Or pos.Equals(Form1.case6.Location) Or pos.Equals(Form1.case7.Location) Or pos.Equals(Form1.case8.Location) Or pos.Equals(Form1.case9.Location) Or pos.Equals(Form1.case10.Location) Or (pos.Equals(Form1.case31.Location) Or pos.Equals(Form1.case32.Location) Or pos.Equals(Form1.case33.Location) Or pos.Equals(Form1.case34.Location)) Or pos.Equals(Form1.case35.Location) Or pos.Equals(Form1.case36.Location) Or pos.Equals(Form1.case37.Location) Or pos.Equals(Form1.case38.Location) Or pos.Equals(Form1.case39.Location) Or pos.Equals(Form1.case40.Location) Or pos.Equals(Form1.case46.Location))) Then
+            valBool = True
+        Else
+            valBool = False
+        End If
+
+        Return valBool
+    End Function
 End Module

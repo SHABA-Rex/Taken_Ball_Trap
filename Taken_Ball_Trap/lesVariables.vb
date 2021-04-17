@@ -16,7 +16,8 @@
     Public positionBalise3Limite3Curseur As Point = Form1.baliseLimit3.Location
     Public positionBalise4Limite4Curseur As Point = Form1.baliseLimite4.Location
     Public positionBaliseBalle As Point = Form1.baliseBallePanzerJoy.Location
-    Public tableauDesCasesDeLaCarte() As Label = {Form1.case32, Form1.case33, Form1.case34, Form1.case35, Form1.case36, Form1.case37, Form1.case38}
+    Public pointQuelquonque As New Point(1500, 800)
+    Public tableauDesCasesDeLaCarte() As Label = {Form1.case31, Form1.case32, Form1.case33, Form1.case34, Form1.case35, Form1.case36, Form1.case37, Form1.case38, Form1.case39, Form1.case40}
 
     Public positionDuPanzerJoy As Point = Form1.panzerJoy.Location
     Public positionDeLaBallePanzerJoy As Point = Form1.ballePanzerJoy.Location
@@ -38,7 +39,7 @@
     Public cadencer4 As Integer = 1
     Public nvlVal, numeroDeLaCaseAtteinte As Integer
     Public mouvementDeLaLimite1 = "droite"
-
+    Public onNeDepassePasCesCases As Boolean
     Public unPoint, pos As Point
     Public enlever As Integer = 89
     Public pasDeDeplacementDuPanzer As Integer = 90 '2 '10
