@@ -46,7 +46,13 @@
   <PropertyGroup>
     <OptionInfer>On</OptionInfer>
   </PropertyGroup>
+  <PropertyGroup>
+    <ApplicationIcon>IconeTimerProject .ico</ApplicationIcon>
+  </PropertyGroup>
   <ItemGroup>
+    <Reference Include="Guna.UI">
+      <HintPath>..\..\Loisirs ET Outils\Guna.UI-Framework-Lib-master\Guna.UI-Framework-Lib\.net 4.0\Guna.UI.dll</HintPath>
+    </Reference>
     <Reference Include="System" />
     <Reference Include="System.Data" />
     <Reference Include="System.Deployment" />
@@ -72,6 +78,12 @@
     <Import Include="System.Threading.Tasks" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Difficulte.Designer.vb">
+      <DependentUpon>Difficulte.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Difficulte.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="Form1.vb">
       <SubType>Form</SubType>
     </Compile>
@@ -81,6 +93,12 @@
     </Compile>
     <Compile Include="lesFonctions.vb" />
     <Compile Include="lesVariables.vb" />
+    <Compile Include="monScore.Designer.vb">
+      <DependentUpon>monScore.vb</DependentUpon>
+    </Compile>
+    <Compile Include="monScore.vb">
+      <SubType>Form</SubType>
+    </Compile>
     <Compile Include="My Project\AssemblyInfo.vb" />
     <Compile Include="My Project\Application.Designer.vb">
       <AutoGen>True</AutoGen>
@@ -96,16 +114,40 @@
       <DependentUpon>Settings.settings</DependentUpon>
       <DesignTimeSharedInput>True</DesignTimeSharedInput>
     </Compile>
+    <Compile Include="Réglages.Designer.vb">
+      <DependentUpon>Réglages.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Réglages.vb">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="Tutorials.Designer.vb">
+      <DependentUpon>Tutorials.vb</DependentUpon>
+    </Compile>
+    <Compile Include="Tutorials.vb">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
+    <EmbeddedResource Include="Difficulte.resx">
+      <DependentUpon>Difficulte.vb</DependentUpon>
+    </EmbeddedResource>
     <EmbeddedResource Include="Form1.resx">
       <DependentUpon>Form1.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="monScore.resx">
+      <DependentUpon>monScore.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="My Project\Resources.resx">
       <Generator>VbMyResourcesResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.vb</LastGenOutput>
       <CustomToolNamespace>My.Resources</CustomToolNamespace>
       <SubType>Designer</SubType>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Réglages.resx">
+      <DependentUpon>Réglages.vb</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="Tutorials.resx">
+      <DependentUpon>Tutorials.vb</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>
@@ -119,6 +161,21 @@
       <LastGenOutput>Settings.Designer.vb</LastGenOutput>
     </None>
     <None Include="App.config" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\quick_mode_on_100px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\rating_48px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\brick_wall_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Resources\help_64px.png" />
+  </ItemGroup>
+  <ItemGroup>
+    <Content Include="IconeTimerProject .ico" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 

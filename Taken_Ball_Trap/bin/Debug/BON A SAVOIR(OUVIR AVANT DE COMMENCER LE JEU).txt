@@ -1,0 +1,44 @@
+############ MERCI DE JOUER A Taken_Ball_Trap ############
+# S'IL VOUS PLAÎT LISEZ TOUT LE DOCUMENT AVANT DE LANCER LE JEU#
+		   #C'EST IMPORTANT#
+
+		             --- 
+                            [^_^]
+			     ---
+
+##### AVANT DE COMMENCER À JOUER :
+
+Pour que les musiques marchent bien il faut saisir les chemins d'accès à ces musiques
+dans les fichiers textes suivant:
+
+-cheminAccesDeExecutableDesMusiquesDuJeu.txt
+-cheminAccesMusiqueNiveauElever.txt
+-cheminAccesMusiqueNiveauImpossible.txt
+-cheminAccesMusiqueNiveauMoyen.txt
+-cheminAccesMusiqueNiveauNormal.txt
+-fichierSonore1.txt
+-fichierSonore2.txt
+
+Ne t'inquiète pas tout ces fichiers ont déjà été créées.
+Tout ce que tu auras à faire ce sera : 
+
+-de copier le chemin d'acces du dossier dans lequel tu es(là où le jeu se trouve)
+-ouvrir un à un les fichiers de chemins d'acces cités plus haut, qui se trouve dans le dossier du jeu.
+-et remplacer C:\Users\ARMAND COLLINS MBA\Desktop\Taken_Ball_Trap\Taken_Ball_Trap\bin\Debug par : le chemin d'acces du dossier dans lequel tu es.
+
+Lorsque tu auras terminer ceci alors tu pourra lancer le jeu.
+
+Le jeu étant lancé ,pour le commencer  , il faut activer la fenetre de jeu en effectuant un clic gauche
+sur la barre des titres de la fenêtre (celle qui contient la croix X pour fermer ^_^).
+
+
+##### COMMENCER À JOUER : 
+
+Vous devez utiliser : 
+      				pour vous deplacer
+-Les touches directionnelles pour vous déplacer (HAUT , BAS , GAUCHE , DROITE)
+-Les lettres (Z=HAUT , S=BAS , Q=GAUCHE , D=DROITE) OU (W=HAUT , S=BAS , A=GAUCHE , D=DROITE)
+
+				pour détruire les cases
+-Les chiffres (1=TIRER À GAUCHE  , 2=TIRER EN BAS , 3=TIRER À DROITE , 5=TIRER EN HAUT) du pavé numérique.
+	

@@ -22,5 +22,25 @@ Taken_Ball_Trap
   resource lookups using this strongly typed resource class.
 </summary>
 </member>
+<member name="P:Taken_Ball_Trap.My.Resources.Resources.brick_wall_64px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Taken_Ball_Trap.My.Resources.Resources.help_64px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Taken_Ball_Trap.My.Resources.Resources.quick_mode_on_100px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
+<member name="P:Taken_Ball_Trap.My.Resources.Resources.rating_48px">
+<summary>
+  Looks up a localized resource of type System.Drawing.Bitmap.
+</summary>
+</member>
 </members>
 </doc>
