@@ -2588,6 +2588,7 @@ Partial Class Form1
         'bouttonPause
         '
         Me.bouttonPause.BackColor = System.Drawing.Color.Yellow
+        Me.bouttonPause.Enabled = False
         Me.bouttonPause.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
         Me.bouttonPause.ForeColor = System.Drawing.Color.DimGray
         Me.bouttonPause.Location = New System.Drawing.Point(634, 23)
@@ -2596,6 +2597,7 @@ Partial Class Form1
         Me.bouttonPause.TabIndex = 603
         Me.bouttonPause.Text = "Pause"
         Me.bouttonPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        Me.bouttonPause.Visible = False
         '
         'nombreDeBarreDeVieRestante
         '

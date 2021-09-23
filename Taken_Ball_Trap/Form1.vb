@@ -80,6 +80,8 @@ Public Class Form1
     End Sub
 
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
+        Dim cheminDaccesSansLeNomDuFichier As String = Application.StartupPath
+
         listeDeTimers.Add(TimerDeplacementDroitBalle)
         listeDeTimers.Add(TimerDeplacementGaucheBalle)
         listeDeTimers.Add(TimerDeplacementVersLeBasDeLaBalle)
