@@ -31,3 +31,7 @@ C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\Taken_Ball_Tra
 C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.Reglages.resources
 C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.Tutorials.resources
 C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.vbproj.GenerateResource.Cache
+C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\A_Ameliorer\Taken_Ball_Trap\Taken_Ball_Trap\bin\Debug\Taken_Ball_Trap.exe.config
+C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\A_Ameliorer\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.exe
+C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\A_Ameliorer\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.xml
+C:\Users\ARMAND COLLINS MBA\Desktop\Programmations\InterfacesProg\A_Ameliorer\Taken_Ball_Trap\Taken_Ball_Trap\obj\Debug\Taken_Ball_Trap.pdb
