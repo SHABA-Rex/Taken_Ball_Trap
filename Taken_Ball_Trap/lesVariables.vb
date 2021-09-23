@@ -5,7 +5,7 @@ Module lesVariables
     'MAINTENANT A L'INTERIEURE IL FAUDRA METTRE LES DIFFERENTS CHEMINS D'ACCES A CES SONS , DANS LE FICHIER CREER AVEC LE OPENCREATE
     'ON VA CHERCHER COMMENT FAIRE POUR RECUPERER LE CHEMIN D'ACCES D'UN FICHEIR DANS UN ORDINATEUR, CE SONT CES CHEMINS QUI SERONT MIS DANS LES DIFFERENTS FICHIERS CREER AVEC LE OPENCREATE.
     'ENSUITE CES CHEMINS SERONT RECUPERER DE CES FICHIERS , ET ENSUITE ON LES METTRA DANS CHACUNE DES VARIABLES  sonProduitParImpactDuKamikaze,sonProduitParRecuperationDeBaretteDeVie
-    Public cheminAccesDeExecutableDesMusiquesDuJeu As String = IO.File.ReadAllText("cheminAccesDeExecutableDesMusiquesDuJeu.txt")
+    Public cheminAccesDeExecutableDesMusiquesDuJeu As String '= IO.File.ReadAllText("cheminAccesDeExecutableDesMusiquesDuJeu.txt")
     Public listeDeTimers As New List(Of Timer)
     Public etatDuJeu = "Pause"
     Public musiqueEncoursDeLecture As String

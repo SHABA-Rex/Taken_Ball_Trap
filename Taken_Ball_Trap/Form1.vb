@@ -82,22 +82,22 @@ Public Class Form1
     Private Sub Form1_Load(sender As Object, e As EventArgs) Handles MyBase.Load
         Dim cheminDaccesSansLeNomDuFichier As String = Application.StartupPath
 
-        listeDeTimers.Add(TimerDeplacementDroitBalle)
-        listeDeTimers.Add(TimerDeplacementGaucheBalle)
-        listeDeTimers.Add(TimerDeplacementVersLeBasDeLaBalle)
-        listeDeTimers.Add(TimerDeplacementVersLeHautDeLaBalle)
-        listeDeTimers.Add(leKamikazeAttaqueParL_Horizontale)
-        listeDeTimers.Add(leKamikazeAttaqueParLaVerticale)
-        listeDeTimers.Add(leKamikaze5AttaqueParL_Horizontale)
-        listeDeTimers.Add(leKamikaze5AttaqueParLaVerticale)
-        listeDeTimers.Add(leKamikaze4AttaqueParL_Horizontale)
-        listeDeTimers.Add(leKamikaze4AttaqueParLaVerticale)
-        listeDeTimers.Add(leKamikaze3AttaqueParL_Horizontale)
-        listeDeTimers.Add(leKamikaze3AttaqueParLaVerticale)
-        listeDeTimers.Add(leKamikaze2AttaqueParL_Horizontale)
-        listeDeTimers.Add(leKamikaze2AttaqueParLaVerticale)
-        listeDeTimers.Add(diminuerLeTempsDeSurvie)
-        listeDeTimers.Add(monterOuDescendrePanneau)
+        'listeDeTimers.Add(TimerDeplacementDroitBalle)
+        'listeDeTimers.Add(TimerDeplacementGaucheBalle)
+        'listeDeTimers.Add(TimerDeplacementVersLeBasDeLaBalle)
+        'listeDeTimers.Add(TimerDeplacementVersLeHautDeLaBalle)
+        'listeDeTimers.Add(leKamikazeAttaqueParL_Horizontale)
+        'listeDeTimers.Add(leKamikazeAttaqueParLaVerticale)
+        'listeDeTimers.Add(leKamikaze5AttaqueParL_Horizontale)
+        'listeDeTimers.Add(leKamikaze5AttaqueParLaVerticale)
+        'listeDeTimers.Add(leKamikaze4AttaqueParL_Horizontale)
+        'listeDeTimers.Add(leKamikaze4AttaqueParLaVerticale)
+        'listeDeTimers.Add(leKamikaze3AttaqueParL_Horizontale)
+        'listeDeTimers.Add(leKamikaze3AttaqueParLaVerticale)
+        'listeDeTimers.Add(leKamikaze2AttaqueParL_Horizontale)
+        'listeDeTimers.Add(leKamikaze2AttaqueParLaVerticale)
+        'listeDeTimers.Add(diminuerLeTempsDeSurvie)
+        'listeDeTimers.Add(monterOuDescendrePanneau)
 
         'On a trouver une methode , on faire jouer la musique dans une autre fenêtre , et on va lancer l'executable à partir de cette fenêtre ci .
         'Process start.
@@ -119,16 +119,17 @@ Public Class Form1
             locationMusiqueNiveauElever.Dispose()
             Dim locationMusiqueNiveauImpossible As FileStream = New IO.FileStream("cheminAccesMusiqueNiveauImpossible.txt", IO.FileMode.OpenOrCreate)
             locationMusiqueNiveauImpossible.Dispose()
-            Dim locationDeExecutableDesMusiquesDuJeu As FileStream = New IO.FileStream("cheminAccesDeExecutableDesMusiquesDuJeu.txt", IO.FileMode.OpenOrCreate)
-            locationDeExecutableDesMusiquesDuJeu.Dispose()
+            'Dim locationDeExecutableDesMusiquesDuJeu As FileStream = New IO.FileStream("cheminAccesDeExecutableDesMusiquesDuJeu.txt", IO.FileMode.OpenOrCreate)
+            'locationDeExecutableDesMusiquesDuJeu.Dispose()
+            IO.File.WriteAllText("cheminAccesDeExecutableDesMusiquesDuJeu.txt", cheminDaccesSansLeNomDuFichier)
         Catch ex As Exception
             MsgBox("Desolé une erreur s'est produite :Erreur sur les chemins d'accès.", vbExclamation)
             Me.Dispose()
         End Try
 
+        cheminAccesDeExecutableDesMusiquesDuJeu = IO.File.ReadAllText("cheminAccesDeExecutableDesMusiquesDuJeu.txt")
         '##
         'System.Diagnostics.Process.Start("C:\Users\ARMAND COLLINS MBA\Desktop\Taken_Ball_Trap\Taken_Ball_Trap\bin\Debug\jouerLaMusique.exe")
-
         jouerOuArreterLaMusiqueDuNiveauNormal(True)
         'jouerOuArreterLaMusiqueDuNiveauMoyen(True)
         'jouerOuArreterLaMusiqueDuNiveauElever(True)
@@ -142,12 +143,14 @@ Public Class Form1
 
         diminuerLeTempsDeSurvie.Start()
         'ICI ON CREE OU OUVRE DES FICHIERS QUI VONT NOUS PERMETTRE DE STOCKER LES CHEMINS D'ACESS VERS LES MUSIQUES DU JEU
-        fichierSonore1 = New IO.FileStream("fichierSonore1.txt", IO.FileMode.OpenOrCreate)
-        fichierSonore1.Dispose()
+        'fichierSonore1 = New IO.FileStream("fichierSonore1.txt", IO.FileMode.OpenOrCreate)
+        'fichierSonore1.Dispose()
+        File.WriteAllText("fichierSonore1.txt", cheminDaccesSansLeNomDuFichier + "\sonMouvementKamikaze.wav")
         sonProduitParImpactDuKamikaze = IO.File.ReadAllText("fichierSonore1.txt")
         '################################
-        fichierSonore2 = New IO.FileStream("fichierSonore2.txt", IO.FileMode.OpenOrCreate)
-        fichierSonore2.Dispose()
+        'fichierSonore2 = New IO.FileStream("fichierSonore2.txt", IO.FileMode.OpenOrCreate)
+        'fichierSonore2.Dispose()
+        File.WriteAllText("fichierSonore2.txt", cheminDaccesSansLeNomDuFichier + "\musiqueBaretteDeVie.wav")
         sonProduitParRecuperationDeBaretteDeVie = IO.File.ReadAllText("fichierSonore2.txt")
         '################################
 
