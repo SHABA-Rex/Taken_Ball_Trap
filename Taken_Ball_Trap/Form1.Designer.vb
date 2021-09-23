@@ -238,6 +238,7 @@ Partial Class Form1
         Me.case109 = New System.Windows.Forms.Label()
         Me.case115 = New System.Windows.Forms.Label()
         Me.PanneauDesItems = New System.Windows.Forms.GroupBox()
+        Me.bouttonPause = New System.Windows.Forms.Label()
         Me.nombreDeBarreDeVieRestante = New System.Windows.Forms.Label()
         Me.nombreDenemiRestant = New System.Windows.Forms.Label()
         Me.pointDeVieRestant = New System.Windows.Forms.Label()
@@ -263,7 +264,6 @@ Partial Class Form1
         Me.lim1 = New System.Windows.Forms.Label()
         Me.panzerJoy = New System.Windows.Forms.Label()
         Me.Label51 = New System.Windows.Forms.Label()
-        Me.bouttonPause = New System.Windows.Forms.Label()
         Me.GroupBox1.SuspendLayout()
         Me.PanneauDesItems.SuspendLayout()
         Me.SuspendLayout()
@@ -2585,6 +2585,18 @@ Partial Class Form1
         Me.PanneauDesItems.TabIndex = 682
         Me.PanneauDesItems.TabStop = False
         '
+        'bouttonPause
+        '
+        Me.bouttonPause.BackColor = System.Drawing.Color.Yellow
+        Me.bouttonPause.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
+        Me.bouttonPause.ForeColor = System.Drawing.Color.DimGray
+        Me.bouttonPause.Location = New System.Drawing.Point(634, 23)
+        Me.bouttonPause.Name = "bouttonPause"
+        Me.bouttonPause.Size = New System.Drawing.Size(113, 85)
+        Me.bouttonPause.TabIndex = 603
+        Me.bouttonPause.Text = "Pause"
+        Me.bouttonPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
+        '
         'nombreDeBarreDeVieRestante
         '
         Me.nombreDeBarreDeVieRestante.Font = New System.Drawing.Font("Segoe UI Semibold", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
@@ -2839,18 +2851,6 @@ Partial Class Form1
         Me.Label51.Text = "Label51"
         Me.Label51.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         Me.Label51.Visible = False
-        '
-        'bouttonPause
-        '
-        Me.bouttonPause.BackColor = System.Drawing.Color.Yellow
-        Me.bouttonPause.Font = New System.Drawing.Font("Segoe UI", 14.25!, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, CType(0, Byte))
-        Me.bouttonPause.ForeColor = System.Drawing.Color.DimGray
-        Me.bouttonPause.Location = New System.Drawing.Point(634, 23)
-        Me.bouttonPause.Name = "bouttonPause"
-        Me.bouttonPause.Size = New System.Drawing.Size(113, 85)
-        Me.bouttonPause.TabIndex = 603
-        Me.bouttonPause.Text = "Pause"
-        Me.bouttonPause.TextAlign = System.Drawing.ContentAlignment.MiddleCenter
         '
         'Form1
         '
